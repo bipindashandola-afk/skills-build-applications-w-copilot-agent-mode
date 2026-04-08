@@ -1,8 +1,16 @@
-from django.urls import path
-
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 from . import views
 
+router = DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'teams', views.TeamViewSet)
+router.register(r'workouts', views.WorkoutViewSet)
+router.register(r'activities', views.ActivityViewSet)
+router.register(r'leaderboard', views.LeaderboardViewSet)
+
 urlpatterns = [
-    path('', views.tracker_root, name='tracker-root'),
+    path('', views.api_root, name='api-root'),
     path('health/', views.health_check, name='tracker-health'),
+    path('', include(router.urls)),
 ]

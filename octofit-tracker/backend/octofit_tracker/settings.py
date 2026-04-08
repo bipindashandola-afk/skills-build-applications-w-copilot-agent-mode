@@ -90,7 +90,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'octofit_db',
-        'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': 'mongodb://127.0.0.1:27017',
         }

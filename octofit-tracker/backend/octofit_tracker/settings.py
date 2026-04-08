@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#lk@1qce(_ui$$*42wvvcxelan-z5*416kwco@g8_#4t)%tx6_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -160,7 +160,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = ['*']
 CORS_ALLOW_METHODS = ['*']
 
-ALLOWED_HOSTS = ['*']
+
 
 # Custom user model
 AUTH_USER_MODEL = 'tracker.User'

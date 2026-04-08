@@ -92,10 +92,6 @@ DATABASES = {
         'NAME': 'octofit_db',
         'CLIENT': {
             'host': 'mongodb://127.0.0.1:27017',
-            'username': '',
-            'password': '',
-            'authSource': 'admin',
-            'authMechanism': 'SCRAM-SHA-1',
         }
     }
 }
